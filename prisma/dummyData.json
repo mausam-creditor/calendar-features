@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": "user1",
+      "first_name": "Alice",
+      "last_name": "Anderson",
+      "email": "alice@example.com",
+      "password": "alicepass"
+    },
+    {
+      "id": "user2",
+      "first_name": "Bob",
+      "last_name": "Brown",
+      "email": "bob@example.com",
+      "password": "bobpass"
+    },
+    {
+      "id": "user3",
+      "first_name": "Charlie",
+      "last_name": "Clark",
+      "email": "charlie@example.com",
+      "password": "charliepass"
+    }
+  ],
+  "groups": [
+    {
+      "id": "group1",
+      "name": "Math Club",
+      "description": "All about advanced math",
+      "created_by": "user1"
+    }
+  ],
+  "events": [
+    {
+      "title": "Math Group Discussion",
+      "description": "Discuss upcoming test",
+      "startTime": "2025-07-01T10:00:00.000Z",
+      "endTime": "2025-07-01T11:00:00.000Z",
+      "calendarType": "GROUP",
+      "visibility": "SHARED",
+      "creatorId": "user1",
+      "groupId": "group1"
+    },
+    {
+      "title": "Personal Study Time",
+      "description": "Focus on calculus",
+      "startTime": "2025-07-02T14:00:00.000Z",
+      "endTime": "2025-07-02T16:00:00.000Z",
+      "calendarType": "PERSONAL",
+      "visibility": "PRIVATE",
+      "creatorId": "user2"
+    }
+  ],
+  "eventParticipants": [
+    {
+      "eventId": "event1",
+      "userId": "user1",
+      "role": "HOST"
+    },
+    {
+      "eventId": "event1",
+      "userId": "user2",
+      "role": "VIEWER"
+    }
+  ],
+  "reminders": [
+    {
+      "eventId": "event1",
+      "userId": "user1",
+      "triggerTime": "2025-07-01T09:45:00.000Z",
+      "method": "EMAIL"
+    },
+    {
+      "eventId": "event2",
+      "userId": "user2",
+      "triggerTime": "2025-07-02T13:45:00.000Z",
+      "method": "PUSH"
+    }
+  ]
+}
